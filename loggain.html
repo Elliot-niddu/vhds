@@ -2,23 +2,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>login</title>
     <link rel="stylesheet" href="style.css">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
  <form id="myForm">
         <label for="username">Please enter your username:</label>
         <input type="text" id="username" name="username">
-        <br>
+        <div class="passtext">
         <label for="password">Password:</label>
         <input type="password" id="password" name="password">
-        <br>
+        </div>
         <input type="submit" value="Submit">
     </form>
 
@@ -38,10 +38,10 @@
             
             
             
-            if(text == "test" && password == "paswrd"){
+            if(text == "elliot" && password == "1234"){
                 username = text;
                 
-                window.location.href = `javascript exempel 4,2.html?username=${encodeURIComponent(username)}`;
+                window.location.href = `scooter.html?username=${encodeURIComponent(username)}`;
             }
             else{
                 alert("Fel användarnamn eller lösenord!");
