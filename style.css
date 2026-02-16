@@ -12,7 +12,18 @@
 
 
 /* hemsidan */
+
 .titel {
-    margin-left: 900px;
+    text-align: center;
     margin-top: 50px;
+}
+
+.elscooter {
+    width: 500px;
+    height: auto;
+    margin-left: 700px;
+}
+
+.hyrknapp {
+    text-align: center;
 }
