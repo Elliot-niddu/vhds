@@ -21,11 +21,31 @@
 
 <div class="hyrknapp">
 <br>
-<button>
-    <a href="#">hyr scooter</a>
- </button>
+<button id="hyrknapp">Hyra elscooter</button>
 <br>
+<p id="status" class="intehyrd">Ingen elscooter hyrd.</p>
     </div>
     
+       <script>
+    const hyrknapp = document.getElementById("hyrknapp");
+    const statusText = document.getElementById("status");
+
+    let hyrd = false;
+
+    hyrknapp.onclick = function () {
+        if (!hyrd) {
+            statusText.textContent = "Elscooter är hyrd.";
+            statusText.className = "hyrd";
+            hyrknapp.textContent = "Lämna tillbaka elscooter";
+            hyrd = true;
+        } else {
+            statusText.textContent = "Ingen elscooter är hyrd.";
+            statusText.className = "inte hyrd ";
+            hyrknapp.textContent = "Hyr elscooter";
+            hyrd = false;
+        }
+    };
+</script>
+
     </body>
 </html>

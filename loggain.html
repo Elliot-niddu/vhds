@@ -4,24 +4,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
     <link rel="stylesheet" href="style.css">
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section id="loginruta">
  <form id="myForm">
-        <label for="username">Please enter your username:</label>
+        <label for="username">Username:</label>
         <input type="text" id="username" name="username">
         <div class="passtext">
         <label for="password">Password:</label>
         <input type="password" id="password" name="password">
         </div>
-        <input type="submit" value="Submit">
+        <br><div class="knapp"><input type="submit" value="Submit"></div><br>
     </form>
-
+</section>
     <script>
         let username = null;
         const form = document.getElementById('myForm');
@@ -48,6 +43,7 @@
             }
         });
     </script>
+
 
 
     </body>
